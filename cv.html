@@ -5,25 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV — Melih Görgülü</title>
   <meta name="description" content="Curriculum vitae of Melih Görgülü, Data Scientist in Berlin." />
+  <link rel="canonical" href="https://melihgorgulu.github.io/cv.html" />
+  <meta name="theme-color" content="#0f1115" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Melih Görgülü" />
+  <meta property="og:title" content="CV — Melih Görgülü" />
+  <meta property="og:description" content="Curriculum vitae of Melih Görgülü, Data Scientist in Berlin." />
+  <meta property="og:url" content="https://melihgorgulu.github.io/cv.html" />
+  <meta property="og:image" content="https://melihgorgulu.github.io/assets/melih-photo.jpeg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CV — Melih Görgülü" />
+  <meta name="twitter:description" content="Curriculum vitae of Melih Görgülü, Data Scientist in Berlin." />
+  <meta name="twitter:image" content="https://melihgorgulu.github.io/assets/melih-photo.jpeg" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo">Melih<span>.</span></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="cv.html" class="active">CV</a></li>
+          <li><a href="cv.html" class="active" aria-current="page">CV</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
     <section class="page-hero">
       <div class="container">
@@ -52,13 +69,17 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span>© 2026 Melih Görgülü</span>
+      <span>© <span id="year">2026</span> Melih Görgülü</span>
       <div class="footer-links">
+        <a href="https://github.com/melihgorgulu" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/melih-gorgulu" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:melihgorgulu98@gmail.com">Email</a>
       </div>
     </div>
   </footer>
+
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 </body>
 </html>

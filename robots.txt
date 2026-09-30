@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melihgorgulu.github.io/sitemap.xml

@@ -5,16 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Melih Görgülü — Data Scientist</title>
   <meta name="description" content="Melih Görgülü is a Data Scientist based in Berlin, working on production LLM systems, machine learning infrastructure, and predictive modeling." />
+  <link rel="canonical" href="https://melihgorgulu.github.io/index.html" />
+  <meta name="theme-color" content="#0f1115" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Melih Görgülü" />
+  <meta property="og:title" content="Melih Görgülü — Data Scientist" />
+  <meta property="og:description" content="Data Scientist in Berlin building production LLM systems, ML infrastructure, and predictive models." />
+  <meta property="og:url" content="https://melihgorgulu.github.io/index.html" />
+  <meta property="og:image" content="https://melihgorgulu.github.io/assets/melih-photo.jpeg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Melih Görgülü — Data Scientist" />
+  <meta name="twitter:description" content="Data Scientist in Berlin building production LLM systems, ML infrastructure, and predictive models." />
+  <meta name="twitter:image" content="https://melihgorgulu.github.io/assets/melih-photo.jpeg" />
+
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Melih Görgülü",
+    "jobTitle": "Data Scientist",
+    "url": "https://melihgorgulu.github.io/",
+    "image": "https://melihgorgulu.github.io/assets/melih-photo.jpeg",
+    "email": "mailto:melihgorgulu98@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Technical University of Munich" },
+      { "@type": "CollegeOrUniversity", "name": "Gazi University" }
+    ],
+    "knowsAbout": ["Large Language Models", "Machine Learning", "MLOps", "RAG", "Deep Learning"],
+    "sameAs": [
+      "https://linkedin.com/in/melih-gorgulu",
+      "https://github.com/melihgorgulu"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo">Melih<span>.</span></a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="cv.html">CV</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -23,7 +67,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
     <!-- Hero -->
     <section class="hero">
@@ -43,7 +87,7 @@
           </div>
         </div>
         <div class="hero-photo">
-          <img src="assets/melih-photo.jpeg" alt="Portrait of Melih Görgülü" />
+          <img src="assets/melih-photo.jpeg" alt="Portrait of Melih Görgülü" width="400" height="400" />
         </div>
       </div>
     </section>
@@ -217,13 +261,17 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span>© 2026 Melih Görgülü</span>
+      <span>© <span id="year">2026</span> Melih Görgülü</span>
       <div class="footer-links">
+        <a href="https://github.com/melihgorgulu" target="_blank" rel="noopener">GitHub</a>
         <a href="https://linkedin.com/in/melih-gorgulu" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:melihgorgulu98@gmail.com">Email</a>
       </div>
     </div>
   </footer>
+
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
